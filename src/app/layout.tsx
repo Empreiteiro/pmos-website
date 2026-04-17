@@ -26,6 +26,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://pmos-website.netlify.app"),
   title: "PMOS — The PM workspace that reads the web for you.",
   description:
     "PMOS pulls signals from the web, clusters them into feature opportunities, writes PRDs, and ships them to your tracker. Sits between research tools and delivery trackers.",
@@ -34,6 +35,13 @@ export const metadata: Metadata = {
     description:
       "PMOS pulls signals from the web, clusters them into feature opportunities, writes PRDs, and ships them to your tracker.",
     type: "website",
+    siteName: "PMOS",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "PMOS — The PM workspace that reads the web for you.",
+    description:
+      "Signals → Evidence → Suggestions → PRDs → Issues. The PM workspace that reads the web for you.",
   },
 };
 
