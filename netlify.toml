@@ -1,0 +1,11 @@
+[build]
+  command = "npm run build"
+  publish = ".next"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+# The Next.js Runtime plugin is installed automatically by Netlify when a
+# Next.js site is detected; declaring it here makes CI builds explicit.
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
